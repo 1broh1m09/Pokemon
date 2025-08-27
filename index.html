@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body class="bg-[#212529]">
+    <div class="container mx-auto pt-[150px]">
+      <img class="mx-auto" src="./pokemon.png" alt="pakemon" />
+
+      <form class="flex gap-[20px] justify-center pt-[50px]">
+        <input
+          id="searchInput"
+          class="border-[2px] border-white text-white px-[12px] py-[8px] w-[300px] rounded-[10px]"
+          type="text"
+          placeholder="Search Pokemon with his name"
+        />
+        <select
+          id="typeSelect"
+          class="border border-white rounded-[10px] text-white bg-[#212529]"
+        >
+          <option value="">Barchasi</option>
+          <option value="Grass">Grass</option>
+          <option value="Poison">Poison</option>
+          <option value="Fire">Fire</option>
+          <option value="Water">Water</option>
+          <option value="Bug">Bug</option>
+          <option value="Normal">Normal</option>
+        </select>
+      </form>
+
+      <div
+        id="box"
+        class="flex flex-wrap gap-[40px] justify-center mt-[100px]"
+      ></div>
+
+      <input type="text" />
+    </div>
+  </body>
+</html>
